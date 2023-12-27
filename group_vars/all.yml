@@ -1,3 +1,4 @@
 ---
 # Set to 'pi' for Raspberry Pi OS.
-ansible_user: pi
+ansible_user: kgoossens
+ansible_ssh_private_key_file: ~/.ssh/studio_id_ed25519

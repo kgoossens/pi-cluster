@@ -77,20 +77,13 @@
         name:
           - python3-pip
           - python3-setuptools
+          - python3-openshift
+          - python3-yaml
           - build-essential
           - golang
           - git
         state: present
       become: true
-
-    - name: Ensure required Python libraries are installed.
-      ansible.builtin.pip:
-        name:
-          - openshift
-          - pyyaml
-        state: present
-      become: true
-
 
 - name: Configure the worker nodes.
   hosts: nodes
